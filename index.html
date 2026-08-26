@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memento Mori Clock</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main id="app" aria-label="Interaktive Memento-Mori-Uhr">
+      <canvas id="scene"></canvas>
+
+      <div id="intro" class="intro">
+        <p id="introText" class="intro__text"></p>
+      </div>
+
+      <div id="logo" class="logo" aria-label="Memento Mori">Memento Mori</div>
+      <div id="hint" class="hint">click to damage - drag to rotate</div>
+      <div id="credit" class="credit">Hochschule Bremen • Gestaltung 2 • Deborah Pambu</div>
+      <div id="loading" class="loading">loading time</div>
+    </main>
+
+    <script type="module" src="./src/main.js?v=20260826-audio-guard"></script>
+  </body>
+</html>
